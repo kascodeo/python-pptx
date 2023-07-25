@@ -34,7 +34,7 @@ version = re.search(r'__version__ = "([^"]+)"', init_py).group(1)
 NAME = "python-pptx-fix"
 VERSION = version
 DESCRIPTION = "Generate and manipulate Open XML PowerPoint (.pptx) files"
-KEYWORDS = "powerpoint ppt pptx office open xml"
+KEYWORDS = "python-pptx python-pptx-fix fix powerpoint ppt pptx office open xml"
 AUTHOR = "Steve Canny"
 AUTHOR_EMAIL = "python-pptx@googlegroups.com"
 MAINTAINER = "Karim"
