@@ -1,8 +1,14 @@
 .. image:: https://travis-ci.org/scanny/python-pptx.svg?branch=master
    :target: https://travis-ci.org/scanny/python-pptx
 
-*python-pptx* is a Python library for creating and updating PowerPoint (.pptx)
+*python-pptx-fix* is a Python library for creating and updating PowerPoint (.pptx)
 files.
+
+This project is created to fix bugs and add minor features to the original project 
+by Scanny at https://github.com/scanny/python-pptx. Original project is 
+unresponsive at the moment so had to create this project as *python-pptx-fix*. 
+Feel free to contribute to this project.
+
 
 A typical use would be generating a customized PowerPoint presentation from
 database content, downloadable by clicking a link in a web application.
