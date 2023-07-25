@@ -3,6 +3,13 @@
 Release History
 ---------------
 
+0.6.21.1 (2023-07-25)
++++++++++++++++++++
+
+- Fix #1 Handling errors related to collections.abc
+- Fix #878 #762 #770 #820 #834 of https://github.com/scanny/python-pptx/issues
+
+
 0.6.21 (2021-09-20)
 +++++++++++++++++++
 
