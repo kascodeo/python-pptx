@@ -31,13 +31,15 @@ license = ascii_bytes_from(thisdir, "LICENSE")
 version = re.search(r'__version__ = "([^"]+)"', init_py).group(1)
 
 
-NAME = "python-pptx"
+NAME = "python-pptx-fix"
 VERSION = version
 DESCRIPTION = "Generate and manipulate Open XML PowerPoint (.pptx) files"
-KEYWORDS = "powerpoint ppt pptx office open xml"
+KEYWORDS = "python-pptx python-pptx-fix fix powerpoint ppt pptx office open xml"
 AUTHOR = "Steve Canny"
 AUTHOR_EMAIL = "python-pptx@googlegroups.com"
-URL = "http://github.com/scanny/python-pptx"
+MAINTAINER = "Karim"
+MAINTAINER_EMAIL = "kascodeo@gmail.com"
+URL = "https://github.com/kascodeo/python-pptx"
 LICENSE = license
 PACKAGES = find_packages(exclude=["tests", "tests.*"])
 PACKAGE_DATA = {"pptx": ["templates/*"]}
@@ -83,6 +85,8 @@ params = {
     "test_suite": TEST_SUITE,
     "classifiers": CLASSIFIERS,
     "zip_safe": ZIP_SAFE,
+    "maintainer": MAINTAINER,
+    "maintainer_email":MAINTAINER_EMAIL,
 }
 
 setup(**params)

@@ -7,10 +7,11 @@ import sys
 import collections
 
 try:
+    import collections.abc
     Container = collections.abc.Container
     Mapping = collections.abc.Mapping
     Sequence = collections.abc.Sequence
-except AttributeError:
+except ImportError:
     Container = collections.Container
     Mapping = collections.Mapping
     Sequence = collections.Sequence
