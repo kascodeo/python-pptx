@@ -310,8 +310,15 @@ def _rendered_size(text, point_size, font_file):
     px_per_inch = 72.0
 
     font = _Fonts.font(font_file, point_size)
-    px_width, px_height = font.getsize(text)
-
+    
+    try:
+        px_width, px_height = font.getsize(text)
+    except AttributeError:
+        # .getsize() method is removed in Pillow from 10.0.0
+        # .font.getsize() is used instead
+        (width, height), (offset_x, offset_y) = font.font.getsize(text)
+        px_width, px_height = width + offset_x, height+offset_y
+        
     emu_width = int(px_width / px_per_inch * emu_per_inch)
     emu_height = int(px_height / px_per_inch * emu_per_inch)
 

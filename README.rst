@@ -4,8 +4,9 @@
 *python-pptx-fix* is a Python library for creating and updating PowerPoint (.pptx)
 files.
 
-This project is created to fix bugs and add minor features to the original project 
-by Scanny at https://github.com/scanny/python-pptx. Original project is 
+This project `python-pptx-fix <https://github.com/kascodeo/python-pptx>`_ is 
+created to fix bugs and add minor features to the original project 
+by `Scanny <https://github.com/scanny/python-pptx>`_. Original project is 
 unresponsive at the moment so had to create this project as *python-pptx-fix*. 
 Feel free to contribute to this project.
 
