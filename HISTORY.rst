@@ -4,6 +4,16 @@ Release History
 ---------------
 
 
+0.6.21.2 (2023-07-26)
++++++++++++++++++++++
+
+- Fix #3 handled removal of getsize() api in pillow 10
+- setup.py updated for twine upload to pypi
+- requirements.txt updated with sphinx tox virtualenv tox
+- tox.ini update with py310 in envlist
+
+
+
 0.6.21.1 (2023-07-25)
 +++++++++++++++++++++
 

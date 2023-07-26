@@ -2,6 +2,7 @@ BEHAVE = behave
 MAKE   = make
 PYTHON = python
 SETUP  = $(PYTHON) ./setup.py
+TWINE = $(PYTHON) -m twine
 
 .PHONY: accept clean cleandocs coverage docs readme sdist upload
 
@@ -41,4 +42,6 @@ sdist:
 	$(SETUP) sdist
 
 upload:
-	$(SETUP) sdist upload
+	# $(SETUP) sdist upload
+	$(TWINE) upload dist/* --verbose
+	
